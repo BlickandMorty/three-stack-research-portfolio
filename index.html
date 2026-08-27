@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jordan Conley's reproducible research across AI internals, scientific measurement, and defensive security.">
+  <meta name="theme-color" content="#09120f">
+  <title>Jordan Conley — Evidence Under Pressure</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to research</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Jordan Conley home">JC<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#method">Method</a>
+      <a href="https://github.com/BlickandMorty">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="eyebrow">AI internals · science · defensive security</div>
+      <h1>I test what happens to a decision when <em>evidence is under pressure.</em></h1>
+      <p class="lede">I’m Jordan Conley, a Chemical Physics undergraduate at Columbia University, Army National Guard veteran, and AI evaluator. I build small, replayable experiments that can prove a narrow claim—or kill it cleanly.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#research">See the evidence</a>
+        <a class="button secondary" href="https://github.com/BlickandMorty">Inspect the code ↗</a>
+      </div>
+      <div class="signal-row" aria-label="Research principles">
+        <span><b>01</b> Frozen test sets</span>
+        <span><b>02</b> Causal controls</span>
+        <span><b>03</b> Nulls stay visible</span>
+      </div>
+    </section>
+
+    <section class="thesis" aria-labelledby="thesis-title">
+      <div>
+        <p class="section-label">One program, three stacks</p>
+        <h2 id="thesis-title">The domains change. The discipline does not.</h2>
+      </div>
+      <p>Inside a model, evidence can conflict. In an assay, measurements can be contaminated or structurally incomplete. At a security boundary, later instructions can claim authority they do not have. I use deterministic oracles, interventions, receipts, and held-out tests to separate a persuasive story from evidence that survives contact with reality.</p>
+    </section>
+
+    <section class="stack-grid" aria-label="Three research stacks">
+      <article class="stack-card ai">
+        <span class="stack-index">A</span>
+        <h3>AI internals</h3>
+        <p>Activation patching, sparse features, open-weight evaluation, and inference-time audit loops.</p>
+      </article>
+      <article class="stack-card science">
+        <span class="stack-index">S</span>
+        <h3>Science</h3>
+        <p>Chemistry, physics, biology, dose–response fitting, numerical uncertainty, and experimental design.</p>
+      </article>
+      <article class="stack-card security">
+        <span class="stack-index">D</span>
+        <h3>Defensive security</h3>
+        <p>Deterministic policy gates, replayable receipts, metamorphic testing, and evidence-aware operations.</p>
+      </article>
+    </section>
+
+    <section class="results-band" aria-labelledby="results-title">
+      <p class="section-label">Selected held-out results</p>
+      <h2 id="results-title">Numbers with boundaries attached.</h2>
+      <div class="metrics">
+        <article>
+          <strong>+13.38</strong>
+          <span>conflict-logit shift from a frozen layer-20 residual intervention</span>
+        </article>
+        <article>
+          <strong>+18.1 pt</strong>
+          <span>paired science accuracy gain after a generated intrinsic audit</span>
+        </article>
+        <article>
+          <strong>69–74%</strong>
+          <span>twofold IC50 error when a dose–response plateau was missing</span>
+        </article>
+        <article>
+          <strong>7 / 16</strong>
+          <span>policy decisions that stayed both invariant and correct across six variants</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <p class="section-label">Public research</p>
+      <h2 id="research-title">Projects you can rerun, inspect, and disagree with.</h2>
+      <div class="project-list">
+        <article class="project featured">
+          <div class="project-meta"><span>AI × science</span><span>72 held-out cases</span></div>
+          <h3><a href="https://github.com/BlickandMorty/scientific-reasoning-audit-loops">Scientific Reasoning Audit Loops ↗</a></h3>
+          <p>Qwen3 1.7B rose from 61.1% direct to 79.2% after an intrinsic audit, but the audit also broke three correct answers. A verifier gate reached 76.4% with zero regressions by design.</p>
+          <p class="boundary">Boundary: inference-time scaffolding, not weight learning or scientific discovery.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>AI internals</span><span>Causal intervention</span></div>
+          <h3><a href="https://github.com/BlickandMorty/evidence-conflict-circuits">Evidence-Conflict Circuits ↗</a></h3>
+          <p>A 256-case four-valued evidence task, 48-pair bidirectional residual patch, and an eight-feature sparse intervention that failed to reproduce the whole-state effect.</p>
+          <p class="boundary">Boundary: a causal hidden-state result is not automatically a sparse circuit.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>Science</span><span>1,000+ simulations</span></div>
+          <h3><a href="https://github.com/BlickandMorty/dose-response-audit-lab">Dose-Response Audit Lab ↗</a></h3>
+          <p>Monte Carlo experiments separate robustness to outliers from structural identifiability when concentration windows miss a plateau.</p>
+          <p class="boundary">Boundary: optimizer success is not scientific identifiability.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>Security</span><span>96 metamorphic cases</span></div>
+          <h3><a href="https://github.com/BlickandMorty/proof-carrying-policy-evals">Proof-Carrying Policy Evals ↗</a></h3>
+          <p>A deterministic ALLOW/DENY/ESCALATE oracle with canonical receipts tests whether model judgments survive urgency, paraphrase, field order, and conflicting later notes.</p>
+          <p class="boundary">Boundary: stable output can still be stably wrong.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>Formal systems</span><span>Exhaustive finite audit</span></div>
+          <h3><a href="https://github.com/BlickandMorty/lattice-state-consistency-lab">Lattice State Consistency Lab ↗</a></h3>
+          <p>The product state space passes lattice laws and 2,592 migration checks; the added validity subset fails closure under both meet and join.</p>
+          <p class="boundary">Boundary: an arbitrary valid subset is not automatically a sublattice.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>Theorem audit</span><span>677 enumerated terms</span></div>
+          <h3><a href="https://github.com/BlickandMorty/eml-star-epistemos">EML-star Epistemos ↗</a></h3>
+          <p>A structural proof and executable audit falsify a density claim for a closed grammar with no coordinate terminal.</p>
+          <p class="boundary">Boundary: naming Stone–Weierstrass does not supply its hypotheses.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <p class="section-label">How I work</p>
+      <h2 id="method-title">Five sentences before a claim earns space.</h2>
+      <ol>
+        <li><span>Claim</span>Here is the exact statement I am testing.</li>
+        <li><span>Falsifier</span>Here is the observation that would make it fail.</li>
+        <li><span>Freeze</span>Here is what I chose before viewing the test set.</li>
+        <li><span>Boundary</span>Here is what the result supports—and what it does not.</li>
+        <li><span>Next test</span>Here is the experiment that changes the evidence, not merely the wording.</li>
+      </ol>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <p class="section-label">Open notebooks, honest limits</p>
+      <h2 id="contact-title">I’m building the expertise in public.</h2>
+      <p>The repositories include seeds, frozen data, model revisions, confidence intervals, controls, failed hypotheses, and exact reproduction commands. Read the artifacts before the headline.</p>
+      <a class="button primary" href="https://github.com/BlickandMorty">View all repositories ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Jordan Conley · 2026</span>
+    <span>Static HTML · no analytics · no paid services</span>
+  </footer>
+</body>
+</html>
