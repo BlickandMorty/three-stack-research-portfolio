@@ -43,6 +43,7 @@ required_repos = {
     "proof-carrying-policy-evals",
     "lattice-state-consistency-lab",
     "sheaf-connectome-sanity-lab",
+    "interrupt-router-calibration-lab",
     "eml-star-epistemos",
 }
 assert all(name in html for name in required_repos)
