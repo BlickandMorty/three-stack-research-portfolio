@@ -38,6 +38,7 @@ for href in parser.hrefs:
 required_repos = {
     "scientific-reasoning-audit-loops",
     "evidence-conflict-circuits",
+    "scientific-evidence-state-transport",
     "component-edit-bound-audit",
     "dose-response-audit-lab",
     "proof-carrying-policy-evals",
