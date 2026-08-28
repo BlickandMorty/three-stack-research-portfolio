@@ -5,6 +5,13 @@ AI internals, science, and defensive security. It is deliberately plain static
 HTML and CSS. There is no database, analytics script, paid API, serverless
 function, or build step.
 
+## Design
+
+The site uses a deliberately minimal off-white pixel-art system and bundles the
+SIL Open Font License 1.1 `Press Start 2P` font in `assets/fonts/`. The font
+license is preserved alongside the asset. Hosting remains a free static Vercel
+deployment with no environment variables.
+
 ## Why this is the Vercel project
 
 The larger private Epistemos site contains application logic and local research

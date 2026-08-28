@@ -1,0 +1,55 @@
+Copyright (c) 2011, Cody "CodeMan38" Boisclair (cody@zone38.net),
+with Reserved Font Name "Press Start".
+
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The fonts,
+including any derivative works, can be bundled, redistributed and/or sold
+with software provided that any reserved names are not used by derivative
+works. The fonts and derivatives cannot be released under another license.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright Holder(s)
+under this license and clearly marked as such. "Original Version" refers to
+the collection of Font Software components as distributed by the Copyright
+Holder(s). "Modified Version" refers to any derivative made by adding to,
+deleting, or substituting components. "Author" refers to any designer,
+engineer, programmer, technical writer, or other contributor.
+
+PERMISSION AND CONDITIONS
+Permission is granted, free of charge, to any person obtaining a copy of the
+Font Software to use, study, copy, merge, embed, modify, redistribute, and
+sell modified and unmodified copies, subject to these conditions:
+
+1. Neither the Font Software nor any individual component, in Original or
+   Modified Versions, may be sold by itself.
+2. Original or Modified Versions may be bundled, redistributed, and/or sold
+   with software, provided that each copy contains the copyright notice and
+   this license. They may be included as stand-alone text files, human-readable
+   headers, or appropriate machine-readable metadata fields.
+3. No Modified Version may use the Reserved Font Name(s) unless explicit
+   written permission is granted by the corresponding Copyright Holder.
+4. The names of the Copyright Holder(s) or Author(s) may not be used to
+   promote, endorse, or advertise any Modified Version except to acknowledge
+   their contribution or with explicit written permission.
+5. The Font Software, modified or unmodified, in part or in whole, must be
+   distributed entirely under this license. This requirement does not apply to
+   documents created using the Font Software or its derivatives.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,
+TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE FONT
+SOFTWARE.
