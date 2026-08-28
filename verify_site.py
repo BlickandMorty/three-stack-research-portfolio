@@ -39,6 +39,7 @@ required_repos = {
     "scientific-reasoning-audit-loops",
     "evidence-conflict-circuits",
     "scientific-evidence-state-transport",
+    "representation-causality-gap-audit",
     "component-edit-bound-audit",
     "dose-response-audit-lab",
     "proof-carrying-policy-evals",
