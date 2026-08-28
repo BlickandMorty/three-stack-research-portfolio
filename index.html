@@ -90,10 +90,10 @@
       <h2 id="research-title">Projects you can rerun, inspect, and disagree with.</h2>
       <div class="project-list">
         <article class="project featured">
-          <div class="project-meta"><span>AI × science</span><span>72 held-out cases</span></div>
+          <div class="project-meta"><span>AI × science</span><span>72 + 72 precommitted cases</span></div>
           <h3><a href="https://github.com/BlickandMorty/scientific-reasoning-audit-loops">Scientific Reasoning Audit Loops ↗</a></h3>
-          <p>Qwen3 1.7B rose from 61.1% direct to 79.2% after an intrinsic audit, but the audit also broke three correct answers. A verifier gate reached 76.4% with zero regressions by design.</p>
-          <p class="boundary">Boundary: inference-time scaffolding, not weight learning or scientific discovery.</p>
+          <p>The original audit found 61.1%→79.2% self-audit improvement with three regressions. A public-precommitted, exactly label-balanced replication found 62.5% direct, 75.0% intrinsic, and 81.9% verifier-gated (14 repairs, 0 regressions).</p>
+          <p class="boundary">Boundary: oracle feedback protects direct-correct cases by design; this is inference-time scaffolding, not learned science.</p>
         </article>
         <article class="project">
           <div class="project-meta"><span>AI internals</span><span>Causal intervention</span></div>
