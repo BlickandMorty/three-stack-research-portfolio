@@ -9,6 +9,7 @@ here means ready to study and critique, not permanently finished research.
 | --- | --- | --- |
 | Public AI-internals results | Atlas entries, frozen fixtures, result notes, verifiers, and raw artifacts across the compression, evidence-conflict, transport, probe, and component-edit labs. | Complete for this release |
 | Second-model direct replication | SmolLM2 pinned revision and SHA-256, 30 frozen cases, valid float32 artifact, preserved invalid bfloat16 artifact, and structural verifier. | Complete |
+| New behavioral generalization gate | 36 frozen science-style cases; baseline, fixed v2 vector, and same-norm random control. Valid run shows universal abstention and no answerable baseline competence. | Complete non-confirmation |
 | Science work | Scientific audit-loop replication and dose-response measurement-risk study with disclosed limits. | Complete for this release |
 | Defensive-security work | Safe policy/routing evaluations plus authorized localhost packet and service-validation reports. | Complete for this release |
 | UAS and answer-packet work | Synthetic retrieval control, local metadata ablation, tied model follow-up, packet integrity validator, and external-corpus preregistration. | Complete narrow results; generalization pending |
@@ -37,12 +38,12 @@ claimed.
 
 ### Compression behavioral generalization
 
-The next behavioral test must use a new preregistered task family and evaluate
-answerable accuracy, correct abstention, fabrication, and clean-case harm. It
-must not reuse the geometry held-out cases, tune after observing outcomes, or
-search layers for a better number. The current release records the direct
-baseline, self-check tradeoff, bounded hook studies, and Smol replication; that
-is enough evidence to stop rather than create another synthetic variation.
+The preregistered new task has now been run. It failed at task viability:
+baseline, candidate, and random control all abstained on every record, leaving
+0/72 answerable accuracy. This is not evidence for or against the vector.
+Another task may be started only after a new preregistration shows how it will
+establish answerable baseline competence before intervention; do not reuse the
+geometry cases, tune after outcomes, or search layers for a better number.
 
 ### Idea shelf
 

@@ -102,6 +102,12 @@ These are analogies, not claims that a transformer is a literal human brain.
   30 packets, final-layer statistic, and a checkpoint pinned by revision and
   SHA-256. Its final-layer delta was positive on all 30 cases (+0.000486662),
   directionally matching Qwen but at a much smaller magnitude.
+  A new 36-case science-style behavioral family then tested the already-fixed
+  v2 procedure against baseline and a same-norm random vector. Baseline,
+  candidate, and random control all abstained on every case: 0/72 answerable
+  accuracy and 36/36 lossy abstention. The behavioral gate failed because the
+  task had no answerable baseline competence, not because it isolated a vector
+  effect.
 - **Brain analogy:** Compare a person's shared mental scratchpad after crossing
   out a footer detail versus the actual rule needed to solve a problem. The
   second change moves the scratchpad more, even if the person still answers
@@ -111,7 +117,9 @@ These are analogies, not claims that a transformer is a literal human brain.
   control, valence, or consciousness. v1 failed its overall gate; v2 passes
   only a narrow latent-geometry gate. The SmolLM2 result is a direct
   state-sensitivity replication, not a cross-model effect size or behavioral
-  improvement.
+  improvement. The new behavioral non-confirmation cannot establish benefit
+  or harm because universal baseline abstention left no usable answerable
+  behavior to improve or preserve.
 - **Study:** [repo](https://github.com/BlickandMorty/compression-control-reasoning-lab)
 
 ### Evidence-Conflict Circuits

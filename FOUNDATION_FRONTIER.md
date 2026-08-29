@@ -50,7 +50,7 @@ whether anything is subjectively felt.
 | Defensive security | Safe policy, routing, and provenance evaluations are documented. | Build operational skills (Security+ / SOC labs) separately from research claims; keep research simulations clearly non-production. |
 | UAS / interoperability | Typed retrieval, metadata-loss, and answer-packet integrity results are complete for this pass. | Do **not** chase a new synthetic score. Use an independently authored corpus, frozen protocol, separate grader, and a publication plan. |
 | Formal / mathematical foundations | The public `research` canon contains HELIOS, EML, substrate ideas, CMS-X, Lean artifacts, and falsifier protocols with a status legend; EML-star and the lattice audit are the bounded public experimental links. | Promote only claims with current proof or experimental evidence. Keep candidate theorems and architectural syntheses clearly labeled as study material. |
-| AI wellbeing / valence | Compression-Control has a 30-case direct residual-state audit, a v1 hook safety failure, a v2 24-case held-out latent-geometry pass, and a completed 180-cell behavioral baseline showing direct fabrication versus self-check over-abstention. | Test a new, preregistered behavioral task family before calling anything a stable control signal. |
+| AI wellbeing / valence | Compression-Control has a 30-case direct residual-state audit, a v1 hook safety failure, a v2 24-case held-out latent-geometry pass, an 180-cell behavioral tradeoff, and a new 36-case behavioral non-confirmation where all conditions universally abstained. | First establish answerable baseline competence on a new preregistered task before testing any control signal again. |
 
 ## Plain-language glossary
 
