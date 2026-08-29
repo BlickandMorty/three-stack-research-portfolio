@@ -226,3 +226,10 @@ These are analogies, not claims that a transformer is a literal human brain.
 I am building an evidence discipline across model internals, scientific
 measurement, and defensive security: preserve the object, test the claim,
 record the failure, and do not let a clean story outrun the evidence.
+
+## Where this pass stops
+
+Read [Research Status and Stopping Rule](STATUS_AND_STOPPING_RULE.md). The
+short version: the current public experiments are ready to study and discuss;
+the next UAS study should wait for an independent corpus and grader rather than
+chasing another synthetic percentage.
