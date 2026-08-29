@@ -1,9 +1,13 @@
-# Foundation Frontier — what comes after the first three stacks
+# Foundation Frontier — three public stacks, two cross-cutting foundations
 
 This is a paper-first map for the next stage of the program. It is not a list
 of results. The completed experiments are in the [Research Atlas](RESEARCH_ATLAS.md);
 this document separates questions I can study now from claims that would outrun
-the evidence.
+the evidence. The portfolio keeps three public stacks because they are the
+clearest way to show the work. It does **not** erase two older foundations:
+formal/mathematical primitives and evidence architecture. Those foundations
+feed all three public stacks rather than competing with them as five unrelated
+career lanes.
 
 ## The map
 
@@ -24,6 +28,10 @@ the evidence.
                        │                       │
                        └───────────┬───────────┘
                                    │
+       Formal / mathematical foundations    Evidence architecture / provenance
+       EML, lattice laws, Lean, falsifiers  UAS, answer packets, Eidos-style admission
+                       └───────────┬───────────────┬───────────┘
+                                   │               │
                     AI wellbeing / functional valence
               what stable better-or-worse signals guide behavior?
 ```
@@ -41,7 +49,8 @@ whether anything is subjectively felt.
 | AI × science | Public audit-loop and measurement studies are documented. | Pre-register one science task where an intervention is evaluated without an oracle being mistaken for learned capability. |
 | Defensive security | Safe policy, routing, and provenance evaluations are documented. | Build operational skills (Security+ / SOC labs) separately from research claims; keep research simulations clearly non-production. |
 | UAS / interoperability | Typed retrieval, metadata-loss, and answer-packet integrity results are complete for this pass. | Do **not** chase a new synthetic score. Use an independently authored corpus, frozen protocol, separate grader, and a publication plan. |
-| AI wellbeing / valence | Compression-Control Lab has a two-case behavioral pilot, a 30-case direct residual-state audit, a v1 hook safety failure, and a v2 24-case held-out latent-geometry pass after development-only scale selection. | Test generated answer/abstention behavior on a new task family before calling anything a stable control signal. |
+| Formal / mathematical foundations | The public `research` canon contains HELIOS, EML, substrate ideas, CMS-X, Lean artifacts, and falsifier protocols with a status legend; EML-star and the lattice audit are the bounded public experimental links. | Promote only claims with current proof or experimental evidence. Keep candidate theorems and architectural syntheses clearly labeled as study material. |
+| AI wellbeing / valence | Compression-Control has a 30-case direct residual-state audit, a v1 hook safety failure, a v2 24-case held-out latent-geometry pass, and a completed 180-cell behavioral baseline showing direct fabrication versus self-check over-abstention. | Test a new, preregistered behavioral task family before calling anything a stable control signal. |
 
 ## Plain-language glossary
 
@@ -110,11 +119,14 @@ test is not “can a model guess the missing fact?” It is whether a fixed cont
 improves careful reasoning when the needed facts remain and produces the
 correct `INSUFFICIENT` response when a needed fact is gone.
 
-The first runnable tier compares a direct local-model answer to one frozen
-self-check instruction. That is deliberately **not** an internal-parameter
-intervention. It is the cheap behavioral baseline that any later activation
-steering must beat. The repository already verifies the generated fixture; no
-model score has been claimed or placed on the portfolio.
+The completed behavioral tier compared direct local-model answer with one
+frozen self-check instruction across 180 records. It was deliberately **not**
+an internal-parameter intervention. Direct answers fabricated on 30/30 lossy
+packets; the frozen self-check correctly abstained on those 30 but answered
+0/30 full and 0/30 lossless answerable packets. This is a published tradeoff,
+not a method to deploy. It complements the direct residual-state audit and the
+two bounded hook studies; it does not establish valence, self-correction, or
+answer improvement.
 
 ## Reading trail
 
