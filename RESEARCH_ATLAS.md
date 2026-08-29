@@ -5,6 +5,24 @@ defensive security. I keep the wins, ties, failures, and limits together. A
 result is useful when another person can rerun it and see exactly what it does
 not prove.
 
+## At a glance: what each experiment actually is
+
+| Project | Stack | Plain-language task | Current status |
+| --- | --- | --- | --- |
+| Scientific Reasoning Audit Loops | AI × science | Make a student check a numerical answer, then compare correction paths. | Bounded replication; verifier help is not learning. |
+| Compression-Control Reasoning Lab | Direct Transformer internals | Remove one evidence card and photograph the model's shared scratchpad. | Geometry result plus behavioral tradeoff; next task family pending. |
+| Evidence-Conflict Circuits | Direct Transformer internals | Copy a whole internal signal, then see whether proposed parts reproduce it. | Whole-state effect; sparse explanation failed. |
+| Scientific Evidence-State Transport | AI × science | Try carrying a short-form signal through a longer problem. | Short result; longer replication failed. |
+| Representation-Causality Gap | AI internals | Read a state versus prove it controls an action. | Readout generalizes partly; causality remains separate. |
+| Component-Edit Bound | AI safety | Nudge one component and inspect collateral effects. | Narrow locality envelope passed. |
+| Dose-Response Audit | Science | Fit a curve with missing ends or a biased control. | Synthetic measurement-risk map. |
+| Proof-Carrying Policy Evals | Security | Ask a guard to attach a checkable receipt to a door decision. | Dangerous ALLOWs rose; failed safety gate. |
+| Lattice State Consistency | Formal security | Merge checklists and test which rules remain valid. | Exact finite result. |
+| Interrupt Router Calibration | AI × security | Let a junior analyst escalate uncertain cases. | Fewer dangerous ALLOWs; weak base classifier. |
+| EML-star Epistemos | Math | Check whether an old map even has coordinates. | Broad density claim falsified. |
+| UAS Reasoning Lab | AI systems × science × security | Keep every evidence page in the right labeled folder. | Narrow results; independent-corpus study preregistered. |
+| Answer-Packet Integrity Lab | Provenance | Check whether a receipt silently lost a required field. | Exact integrity result, not truth. |
+
 ## First, the human-brain translation
 
 These are analogies, not claims that a transformer is a literal human brain.
@@ -65,9 +83,10 @@ These are analogies, not claims that a transformer is a literal human brain.
   cap 0.001). A separate 48-case independent v2 fixture then selected scale on
   development cases only and passed the 24-case held-out geometry gate:
   +0.002557 over baseline, +0.002673 over random, and 0.000441 clean drop.
-  A separate two-case behavioral pilot was mixed:
-  direct answers fabricated on both lossy cases while a self-check abstained on
-  both lossy cases and on every answerable pilot case.
+  The completed 180-cell frozen behavioral baseline made that early tradeoff
+  unambiguous: direct answers fabricated on 30/30 lossy packets, while the
+  frozen self-check abstained correctly on 30/30 lossy packets but answered
+  0/30 full and 0/30 lossless answerable packets.
 - **Brain analogy:** Compare a person's shared mental scratchpad after crossing
   out a footer detail versus the actual rule needed to solve a problem. The
   second change moves the scratchpad more, even if the person still answers
@@ -235,6 +254,10 @@ These are analogies, not claims that a transformer is a literal human brain.
   contain the right page but lose whose chart it belongs to.
 - **Limit:** The ablation proves that keeping needed type metadata matters when
   the baseline erases it; it is not general intelligence.
+- **Next:** An [independent-corpus preregistration](https://github.com/BlickandMorty/unified-address-space-reasoning-lab/blob/main/EXTERNAL_CORPUS_PREREGISTRATION.md)
+  now requires public third-party source receipts, a frozen retrieval hash,
+  separate case-author and blind-grader roles, and no result until that
+  contract is met.
 - **Study:** [repo](https://github.com/BlickandMorty/unified-address-space-reasoning-lab)
 
 ### Answer-Packet Integrity Lab
