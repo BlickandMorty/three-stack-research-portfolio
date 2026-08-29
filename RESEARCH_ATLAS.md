@@ -59,15 +59,19 @@ These are analogies, not claims that a transformer is a literal human brain.
   no answer was generated for this activation audit.
 - **Result:** The precommitted final-layer comparison was 0.998421 after an
   irrelevant deletion and 0.990804 after a decisive deletion, a +0.007617
-  lossless-minus-lossy gap. A separate two-case behavioral pilot was mixed:
+  lossless-minus-lossy gap. A fresh held-out residual hook then shifted lossy
+  states toward full-context geometry by +0.004056 and beat a same-norm random
+  vector by +0.004792, but failed its clean-context safety gate (0.001357 drop;
+  cap 0.001). A separate two-case behavioral pilot was mixed:
   direct answers fabricated on both lossy cases while a self-check abstained on
   both lossy cases and on every answerable pilot case.
 - **Brain analogy:** Compare a person's shared mental scratchpad after crossing
   out a footer detail versus the actual rule needed to solve a problem. The
   second change moves the scratchpad more, even if the person still answers
   badly.
-- **Limit:** Internal-state sensitivity is not accuracy, memory recovery,
-  causal control, valence, or consciousness.
+- **Limit:** The state-sensitivity result is not accuracy, memory recovery,
+  safe general causal control, valence, or consciousness. The hook's
+  precommitted overall gate failed.
 - **Study:** [repo](https://github.com/BlickandMorty/compression-control-reasoning-lab)
 
 ### Evidence-Conflict Circuits

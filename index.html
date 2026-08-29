@@ -119,6 +119,15 @@
           </div>
           <p class="chart-note">30 matched synthetic packets; precommitted final-layer gap: +0.007617. This measures internal-state sensitivity, not answer accuracy or memory recovery.</p>
         </figure>
+        <figure class="mini-chart" aria-labelledby="repair-chart-title">
+          <figcaption id="repair-chart-title">Held-out residual repair: geometry gain and safety gate</figcaption>
+          <div class="bar-list">
+            <div class="bar-row"><span class="bar-label">Chosen vector</span><span class="bar-track"><span class="bar" style="width:81.1%"></span></span><span class="bar-value">+0.004056</span></div>
+            <div class="bar-row"><span class="bar-label">Random vector</span><span class="bar-track"><span class="bar flat" style="width:14.7%"></span></span><span class="bar-value">−0.000735</span></div>
+            <div class="bar-row"><span class="bar-label">Clean-state drop</span><span class="bar-track"><span class="bar gold" style="width:27.1%"></span></span><span class="bar-value">0.001357</span></div>
+          </div>
+          <p class="chart-note">18 fresh held-out cases. The vector beat random and improved target geometry, but clean-state drop exceeded the precommitted 0.001 safety cap—overall gate failed.</p>
+        </figure>
       </div>
     </section>
 
@@ -167,8 +176,8 @@
         <article class="project">
           <div class="project-meta"><span>AI internals × memory</span><span>30 matched direct-state pairs</span></div>
           <h3><a href="https://github.com/BlickandMorty/compression-control-reasoning-lab">Compression-Control Reasoning Lab ↗</a></h3>
-          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617).</p>
-          <p class="boundary">Boundary: synthetic state-sensitivity result, not answer accuracy, recovered memory, a reasoning-control intervention, or evidence of emotion/valence. A two-case behavioral pilot remains mixed and explicitly provisional.</p>
+          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617). A fresh 18-case held-out hook study then moved lossy states toward full-context geometry by +0.004056 and beat a same-norm random vector.</p>
+          <p class="boundary">Boundary: the hook failed its clean-context safety gate (0.001357 drop, cap 0.001), so it is a partial causal geometry result—not recovered memory, answer improvement, a safe reasoning control, or evidence of emotion/valence.</p>
         </article>
         <article class="project">
           <div class="project-meta"><span>AI internals × science</span><span>36 frozen pairs</span></div>
