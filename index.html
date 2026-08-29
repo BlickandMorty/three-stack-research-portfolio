@@ -15,6 +15,7 @@
     <a class="wordmark" href="#top" aria-label="Jordan Conley home">JC<span>.</span></a>
     <nav aria-label="Primary navigation">
       <a href="#research">Research</a>
+      <a href="https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/RESEARCH_ATLAS.md">Study atlas ↗</a>
       <a href="#method">Method</a>
       <a href="https://github.com/BlickandMorty">GitHub ↗</a>
     </nav>
@@ -27,6 +28,7 @@
       <p class="lede">I’m Jordan Conley, a Chemical Physics undergraduate at Columbia University, Army National Guard veteran, and AI evaluator. I build small, replayable experiments that can prove a narrow claim—or kill it cleanly.</p>
       <div class="hero-actions">
         <a class="button primary" href="#research">See the evidence</a>
+        <a class="button secondary" href="https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/RESEARCH_ATLAS.md">Study the atlas ↗</a>
         <a class="button secondary" href="https://github.com/BlickandMorty">Inspect the code ↗</a>
       </div>
       <div class="signal-row" aria-label="Research principles">
@@ -82,6 +84,32 @@
           <strong>~54%</strong>
           <span>twofold IC50 error at 40-unit fixed-control bias in a frozen simulation sweep</span>
         </article>
+      </div>
+    </section>
+
+    <section class="evidence-visuals" aria-labelledby="evidence-visuals-title">
+      <p class="section-label">Evidence board</p>
+      <h2 id="evidence-visuals-title">The useful result is the one that survives the control.</h2>
+      <p>These are compact views of the UAS work: a retrieval control, a local-model null result, and a type-erasure ablation. The linked repositories hold the frozen fixtures, raw outputs, and limits.</p>
+      <div class="chart-grid">
+        <figure class="mini-chart" aria-labelledby="uas-chart-title">
+          <figcaption id="uas-chart-title">UAS retrieval: exact target retrieval</figcaption>
+          <div class="bar-list">
+            <div class="bar-row"><span class="bar-label">Flat ranker</span><span class="bar-track"><span class="bar flat" style="width:0%"></span></span><span class="bar-value">0 / 90</span></div>
+            <div class="bar-row"><span class="bar-label">Typed UAS</span><span class="bar-track"><span class="bar" style="width:100%"></span></span><span class="bar-value">90 / 90</span></div>
+          </div>
+          <p class="chart-note">A synthetic type-confusion control: this establishes a retrieval-policy boundary, not model intelligence.</p>
+        </figure>
+        <figure class="mini-chart" aria-labelledby="model-chart-title">
+          <figcaption id="model-chart-title">Local Qwen3 4B: exact answer accuracy</figcaption>
+          <div class="bar-list">
+            <div class="bar-row"><span class="bar-label">Flat, v1</span><span class="bar-track"><span class="bar gold" style="width:100%"></span></span><span class="bar-value">24 / 24</span></div>
+            <div class="bar-row"><span class="bar-label">UAS, v1</span><span class="bar-track"><span class="bar" style="width:100%"></span></span><span class="bar-value">24 / 24</span></div>
+            <div class="bar-row"><span class="bar-label">Flat, type loss</span><span class="bar-track"><span class="bar flat" style="width:33.3%"></span></span><span class="bar-value">8 / 24</span></div>
+            <div class="bar-row"><span class="bar-label">UAS, type kept</span><span class="bar-track"><span class="bar" style="width:100%"></span></span><span class="bar-value">24 / 24</span></div>
+          </div>
+          <p class="chart-note">The v1 tie stays visible. The second result is explicitly a metadata-loss ablation, not a general reasoning claim.</p>
+        </figure>
       </div>
     </section>
 
