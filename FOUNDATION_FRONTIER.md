@@ -41,7 +41,7 @@ whether anything is subjectively felt.
 | AI × science | Public audit-loop and measurement studies are documented. | Pre-register one science task where an intervention is evaluated without an oracle being mistaken for learned capability. |
 | Defensive security | Safe policy, routing, and provenance evaluations are documented. | Build operational skills (Security+ / SOC labs) separately from research claims; keep research simulations clearly non-production. |
 | UAS / interoperability | Typed retrieval, metadata-loss, and answer-packet integrity results are complete for this pass. | Do **not** chase a new synthetic score. Use an independently authored corpus, frozen protocol, separate grader, and a publication plan. |
-| AI wellbeing / valence | Compression-Control Lab has a two-case behavioral pilot, a 30-case direct residual-state audit, and an 18-case held-out causal hook result that failed its clean-state gate. | Repeat only on a new task/model with scale selected on development data; do not call anything a stable control signal yet. |
+| AI wellbeing / valence | Compression-Control Lab has a two-case behavioral pilot, a 30-case direct residual-state audit, a v1 hook safety failure, and a v2 24-case held-out latent-geometry pass after development-only scale selection. | Test generated answer/abstention behavior on a new task family before calling anything a stable control signal. |
 
 ## Plain-language glossary
 

@@ -62,16 +62,20 @@ These are analogies, not claims that a transformer is a literal human brain.
   lossless-minus-lossy gap. A fresh held-out residual hook then shifted lossy
   states toward full-context geometry by +0.004056 and beat a same-norm random
   vector by +0.004792, but failed its clean-context safety gate (0.001357 drop;
-  cap 0.001). A separate two-case behavioral pilot was mixed:
+  cap 0.001). A separate 48-case independent v2 fixture then selected scale on
+  development cases only and passed the 24-case held-out geometry gate:
+  +0.002557 over baseline, +0.002673 over random, and 0.000441 clean drop.
+  A separate two-case behavioral pilot was mixed:
   direct answers fabricated on both lossy cases while a self-check abstained on
   both lossy cases and on every answerable pilot case.
 - **Brain analogy:** Compare a person's shared mental scratchpad after crossing
   out a footer detail versus the actual rule needed to solve a problem. The
   second change moves the scratchpad more, even if the person still answers
   badly.
-- **Limit:** The state-sensitivity result is not accuracy, memory recovery,
-  safe general causal control, valence, or consciousness. The hook's
-  precommitted overall gate failed.
+- **Limit:** The state-sensitivity and v2 hook result are not accuracy, memory
+  recovery, answer improvement, a permanent parameter update, general causal
+  control, valence, or consciousness. v1 failed its overall gate; v2 passes
+  only a narrow latent-geometry gate.
 - **Study:** [repo](https://github.com/BlickandMorty/compression-control-reasoning-lab)
 
 ### Evidence-Conflict Circuits
