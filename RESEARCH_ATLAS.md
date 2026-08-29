@@ -19,6 +19,7 @@ not prove.
 | Proof-Carrying Policy Evals | Security | Ask a guard to attach a checkable receipt to a door decision. | Dangerous ALLOWs rose; failed safety gate. |
 | Lattice State Consistency | Formal security | Merge checklists and test which rules remain valid. | Exact finite result. |
 | Interrupt Router Calibration | AI × security | Let a junior analyst escalate uncertain cases. | Fewer dangerous ALLOWs; weak base classifier. |
+| Security Operations Lab | Defensive security operations | Trace one self-owned localhost transaction, then validate one local service scan. | Two sanitized, authorized lab reports. |
 | EML-star Epistemos | Math | Check whether an old map even has coordinates. | Broad density claim falsified. |
 | UAS Reasoning Lab | AI systems × science × security | Keep every evidence page in the right labeled folder. | Narrow results; independent-corpus study preregistered. |
 | Answer-Packet Integrity Lab | Provenance | Check whether a receipt silently lost a required field. | Exact integrity result, not truth. |
@@ -196,6 +197,25 @@ These are analogies, not claims that a transformer is a literal human brain.
   decisions overall still fail if the dangerous doors become easier to open.
 - **Limit:** Average accuracy cannot hide a dangerous error class.
 - **Study:** [repo](https://github.com/BlickandMorty/proof-carrying-policy-evals)
+
+### Security Operations Lab
+
+- **Question:** Can I collect and report simple network evidence without
+  overstating what a lab capture or scanner proves?
+- **Experiment:** In a self-owned localhost-only scope, I captured one TCP and
+  HTTP transaction with Wireshark/TShark, then ran an authorized Nmap service
+  check and compared it with native Windows listener and service data.
+- **Result:** The capture contains 13 frames showing the expected TCP
+  handshake, HTTP `GET` / `200`, and orderly FIN/ACK close. Nmap's localhost
+  observations were manually checked against Windows data instead of being
+  treated as a vulnerability finding.
+- **Human analogy:** Check a door's hinge and latch in your own house, then
+  write down exactly what moved. It does not tell you that every door in the
+  neighborhood is secure or insecure.
+- **Limit:** Two authorized personal-lab reports are not enterprise SOC
+  monitoring, forensic investigation, incident response, or penetration
+  testing.
+- **Study:** [repo](https://github.com/BlickandMorty/security-operations-lab)
 
 ### Lattice State Consistency Lab
 
