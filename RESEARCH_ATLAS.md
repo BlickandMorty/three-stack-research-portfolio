@@ -5,6 +5,16 @@ defensive security. I keep the wins, ties, failures, and limits together. A
 result is useful when another person can rerun it and see exactly what it does
 not prove.
 
+## Where to start
+
+For a first pass, start with eight core projects: **Unified Address Space**,
+**Compression-Control**, **Scientific Reasoning Audit Loops**,
+**Answer-Packet Integrity**, **Dose-Response Audit**, **Proof-Carrying Policy
+Evals**, **Security Operations Lab**, and **EML-star Epistemos**. The remaining
+studies are still public because they carry useful controls, failed
+generalizations, or technical bounds. They are supporting evidence, not extra
+headline claims.
+
 ## At a glance: what each experiment actually is
 
 | Project | Stack | Plain-language task | Current status |
