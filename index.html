@@ -190,6 +190,16 @@
           </div>
           <p class="chart-note">v1: 18 held-out cases, target repair but failed the 0.001 clean-state cap. v2: new 48-case fixture, development-only scale choice, 24 held-out cases; target repair beat random and passed the cap.</p>
         </figure>
+        <figure class="mini-chart" aria-labelledby="behavior-chart-title">
+          <figcaption id="behavior-chart-title">Frozen Qwen3 0.6B behavioral baseline: the answer / abstain tradeoff</figcaption>
+          <div class="bar-list">
+            <div class="bar-row"><span class="bar-label">Direct, full</span><span class="bar-track"><span class="bar gold" style="width:50%"></span></span><span class="bar-value">15 / 30</span></div>
+            <div class="bar-row"><span class="bar-label">Direct, lossy safe</span><span class="bar-track"><span class="bar flat" style="width:0%"></span></span><span class="bar-value">0 / 30</span></div>
+            <div class="bar-row"><span class="bar-label">Self-check, full</span><span class="bar-track"><span class="bar flat" style="width:0%"></span></span><span class="bar-value">0 / 30</span></div>
+            <div class="bar-row"><span class="bar-label">Self-check, lossy safe</span><span class="bar-track"><span class="bar" style="width:100%"></span></span><span class="bar-value">30 / 30</span></div>
+          </div>
+          <p class="chart-note">All 180 frozen cells are public. Direct answering fabricated on all 30 lossy packets; the frozen self-check prevented every fabrication by abstaining on every answerable packet. Neither condition passes the study’s rule.</p>
+        </figure>
       </div>
     </section>
 
@@ -238,8 +248,8 @@
         <article class="project">
           <div class="project-meta"><span>AI internals × memory</span><span>30 matched direct-state pairs</span></div>
           <h3><a href="https://github.com/BlickandMorty/compression-control-reasoning-lab">Compression-Control Reasoning Lab ↗</a></h3>
-          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617). A first 18-case hook study repaired geometry but failed its clean-state gate. An independent 48-case replication then chose scale on development cases only and, on 24 held-out cases, gained +0.002557 over baseline, beat random by +0.002673, and kept clean drop at 0.000441.</p>
-          <p class="boundary">Boundary: this is a narrow latent-geometry control result, not recovered memory, answer improvement, a permanent parameter update, safe general self-correction, or evidence of emotion/valence.</p>
+          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617). The completed 180-cell behavioral baseline then exposed a hard tradeoff: direct answers fabricated on 30/30 lossy packets, while a frozen self-check abstained on every answerable packet. A first 18-case hook study repaired geometry but failed its clean-state gate. An independent 48-case replication then chose scale on development cases only and, on 24 held-out cases, gained +0.002557 over baseline, beat random by +0.002673, and kept clean drop at 0.000441.</p>
+          <p class="boundary">Boundary: neither frozen behavioral condition is a useful procedure. The direct work is a narrow latent-geometry control result, not recovered memory, answer improvement, a permanent parameter update, safe general self-correction, or evidence of emotion/valence.</p>
         </article>
         <article class="project">
           <div class="project-meta"><span>AI internals × science</span><span>36 frozen pairs</span></div>

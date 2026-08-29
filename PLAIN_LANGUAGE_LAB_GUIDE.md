@@ -35,6 +35,8 @@ The portfolio's circle labeled **working state** is therefore a visual aid. It d
 
 This is the most familiar test: give the model a task and score its answer. It is valuable, but it can hide why an answer changed.
 
+The completed 180-cell Qwen3 0.6B baseline makes that limitation easy to see. Direct answering got `15/30` answerable full packets right but fabricated on `30/30` packets after the required fact was removed. A single frozen self-check did the opposite: `30/30` correct abstentions on lossy packets, but `0/30` on answerable full and lossless packets. It is a real result because every cell, fixture receipt, and scorer is public; it is a **failure of both procedures**, not a method to copy. See the [complete behavioral result](https://github.com/BlickandMorty/compression-control-reasoning-lab/blob/main/STAGE1_COMPLETE_RESULT.md).
+
 ### Level 2 — Did the internal working state change?
 
 Here the output can be held aside and the residual stream can be measured directly. In the [Compression-Control Reasoning Lab](https://github.com/BlickandMorty/compression-control-reasoning-lab), 30 matched Qwen3 0.6B runs compared two edits:
