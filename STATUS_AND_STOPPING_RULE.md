@@ -5,7 +5,8 @@
 The public portfolio already contains rerunnable work across all three stacks:
 
 - AI internals: audit loops, evidence conflict, state transport, probes, and
-  bounded component edits.
+  bounded component edits, plus a pinned second-model replication of the
+  30-packet activation-compression direction on SmolLM2-1.7B.
 - Science: numerical-reasoning audits and dose-response identifiability.
 - Security/formal systems: proof-carrying policies, interrupt routing, and
   lattice consistency.
@@ -15,6 +16,19 @@ The public portfolio already contains rerunnable work across all three stacks:
 Each finished public project should have a README, frozen fixture or protocol,
 saved result, stated boundary, and a rerun command or verifier. The Research
 Atlas is the reading order.
+
+## SmolLM2 replication status
+
+The direct activation-compression effect now has one completed second-model
+replication. The pinned SmolLM2-1.7B checkpoint used the original 30 fixtures,
+the precommitted final residual layer, and the same cosine statistic. All 30
+final-layer case deltas were positive, with mean +0.000486662. This direction
+matches the Qwen3 0.6B result but is much smaller than Qwen's +0.007617 gap.
+
+The first bfloat16 arithmetic artifact is retained as invalid because cosine
+rounding exceeded its mathematical range; the float32 result passes the
+structural verifier. This is a reproducibility record, not a reason to rerun
+or search another layer for a larger effect.
 
 ## UAS status
 
