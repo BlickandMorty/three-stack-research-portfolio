@@ -29,6 +29,7 @@
       <p class="lede">I’m Jordan Conley, a Chemical Physics undergraduate at Columbia University, Army National Guard veteran, and AI evaluator. I build small, replayable experiments that can prove a narrow claim—or kill it cleanly.</p>
       <div class="hero-actions">
         <a class="button primary" href="#research">See the evidence</a>
+        <a class="button secondary" href="https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/PLAIN_LANGUAGE_LAB_GUIDE.md">What am I looking at? ↗</a>
         <a class="button secondary" href="https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/RESEARCH_ATLAS.md">Study the atlas ↗</a>
         <a class="button secondary" href="https://github.com/BlickandMorty">Inspect the code ↗</a>
       </div>
@@ -45,6 +46,66 @@
         <h2 id="thesis-title">The domains change. The discipline does not.</h2>
       </div>
       <p>Inside a model, evidence can conflict. In an assay, measurements can be contaminated or structurally incomplete. At a security boundary, later instructions can claim authority they do not have. I use deterministic oracles, interventions, receipts, and held-out tests to separate a persuasive story from evidence that survives contact with reality.</p>
+    </section>
+
+    <section class="research-map" aria-labelledby="research-map-title">
+      <p class="section-label">Start here: a plain-language map</p>
+      <h2 id="research-map-title">An AI research run is closer to a game level than a mystery.</h2>
+      <p class="map-intro">This is a helpful control-panel picture, not a claim that a Transformer is a human brain. We give the model evidence cards, observe its temporary working state, make one small controlled change, then check both the intended effect and collateral damage.</p>
+      <div class="system-map" aria-label="Evidence cards flow through a model working state and decision meter to an output, with a controlled intervention and safety check">
+        <article class="map-node evidence-node">
+          <span class="node-number">01</span>
+          <h3>Evidence cards</h3>
+          <p>Facts, types, sources, and instructions enter the level.</p>
+          <span class="signal positive">+ right fact and type</span>
+          <span class="signal negative">− missing or mixed-up fact</span>
+        </article>
+        <span class="map-arrow" aria-hidden="true">→</span>
+        <article class="map-core">
+          <span class="node-number">02</span>
+          <h3>Working state</h3>
+          <p>The model’s moment-by-moment scratchpad. In code this is a residual stream, not a memory drawer or a mind.</p>
+          <span class="intervention">small measured nudge</span>
+        </article>
+        <span class="map-arrow" aria-hidden="true">→</span>
+        <article class="map-node decision-node">
+          <span class="node-number">03</span>
+          <h3>Decision meter</h3>
+          <p>Competing next-answer scores are compared before the model acts.</p>
+          <span class="signal neutral">? score the change</span>
+        </article>
+        <span class="map-arrow" aria-hidden="true">→</span>
+        <article class="map-node output-node">
+          <span class="node-number">04</span>
+          <h3>Answer + safety check</h3>
+          <p>Did the target move in the desired direction without harming clean cases?</p>
+          <span class="signal positive">+ pass a pre-set gate</span>
+          <span class="signal negative">− keep the failure visible</span>
+        </article>
+      </div>
+      <div class="map-key" aria-label="Research map legend">
+        <span><b class="key-positive">+</b> measured movement in the intended direction</span>
+        <span><b class="key-negative">−</b> regression, missing evidence, or failed safety gate</span>
+        <span><b class="key-neutral">?</b> a question still open, not an answer</span>
+      </div>
+      <div class="mission-grid">
+        <article>
+          <span class="mission-tag">Mission 1 · UAS</span>
+          <h3>Put each card in the right folder.</h3>
+          <p>Unified Address Space (UAS) is a typed library-card system. In a synthetic type-confusion level, typed retrieval found the target <b>90/90</b>; a flat ranker found it <b>0/90</b>. A separate local-model test tied, so the broader benefit remains unproven.</p>
+        </article>
+        <article>
+          <span class="mission-tag">Mission 2 · Internal map</span>
+          <h3>See whether a missing fact changes the scratchpad.</h3>
+          <p>In 30 matched Qwen3 0.6B runs, removing a decisive fact moved the final working-state geometry farther from full context than removing an irrelevant fact: a pre-set gap of <b>+0.007617</b>.</p>
+        </article>
+        <article>
+          <span class="mission-tag">Mission 3 · Safe nudge</span>
+          <h3>Try a nudge, then make it earn trust.</h3>
+          <p>Residual-repair v1 improved the target but failed its clean-state gate. An independent v2 gained <b>+0.002557</b> on held-out cases, beat random control, and kept clean drop at <b>0.000441</b>. That is a narrow geometry result—not restored memory or general reasoning.</p>
+        </article>
+      </div>
+      <a class="button secondary" href="https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/PLAIN_LANGUAGE_LAB_GUIDE.md">Read the no-jargon lab guide ↗</a>
     </section>
 
     <section class="stack-grid" aria-label="Three research stacks">
