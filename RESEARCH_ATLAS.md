@@ -49,6 +49,27 @@ These are analogies, not claims that a transformer is a literal human brain.
   scientific discovery.
 - **Study:** [repo](https://github.com/BlickandMorty/scientific-reasoning-audit-loops)
 
+### Compression-Control Reasoning Lab
+
+- **Question:** When a packet loses one fact, does a direct Transformer state
+  react differently when that fact is decisive rather than irrelevant?
+- **Experiment:** Qwen3 0.6B was run locally through Transformers with thinking
+  disabled in the chat template. On 30 matched full/lossless/lossy packets, I
+  compared final residual-stream cosine similarity to the matched full state;
+  no answer was generated for this activation audit.
+- **Result:** The precommitted final-layer comparison was 0.998421 after an
+  irrelevant deletion and 0.990804 after a decisive deletion, a +0.007617
+  lossless-minus-lossy gap. A separate two-case behavioral pilot was mixed:
+  direct answers fabricated on both lossy cases while a self-check abstained on
+  both lossy cases and on every answerable pilot case.
+- **Brain analogy:** Compare a person's shared mental scratchpad after crossing
+  out a footer detail versus the actual rule needed to solve a problem. The
+  second change moves the scratchpad more, even if the person still answers
+  badly.
+- **Limit:** Internal-state sensitivity is not accuracy, memory recovery,
+  causal control, valence, or consciousness.
+- **Study:** [repo](https://github.com/BlickandMorty/compression-control-reasoning-lab)
+
 ### Evidence-Conflict Circuits
 
 - **Question:** Is there a causal internal state related to support,

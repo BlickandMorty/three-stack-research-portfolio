@@ -91,7 +91,7 @@
     <section class="evidence-visuals" aria-labelledby="evidence-visuals-title">
       <p class="section-label">Evidence board</p>
       <h2 id="evidence-visuals-title">The useful result is the one that survives the control.</h2>
-      <p>These are compact views of the UAS work: a retrieval control, a local-model null result, and a type-erasure ablation. The linked repositories hold the frozen fixtures, raw outputs, and limits.</p>
+      <p>These compact views show UAS controls alongside a direct Transformer activation measurement. The linked repositories hold the frozen fixtures, raw outputs, and limits.</p>
       <div class="chart-grid">
         <figure class="mini-chart" aria-labelledby="uas-chart-title">
           <figcaption id="uas-chart-title">UAS retrieval: exact target retrieval</figcaption>
@@ -110,6 +110,14 @@
             <div class="bar-row"><span class="bar-label">UAS, type kept</span><span class="bar-track"><span class="bar" style="width:100%"></span></span><span class="bar-value">24 / 24</span></div>
           </div>
           <p class="chart-note">The v1 tie stays visible. The second result is explicitly a metadata-loss ablation, not a general reasoning claim.</p>
+        </figure>
+        <figure class="mini-chart" aria-labelledby="activation-chart-title">
+          <figcaption id="activation-chart-title">Direct Qwen3 0.6B: final residual similarity to full context</figcaption>
+          <div class="bar-list">
+            <div class="bar-row"><span class="bar-label">Irrelevant fact removed</span><span class="bar-track"><span class="bar gold" style="width:99.8421%"></span></span><span class="bar-value">0.998421</span></div>
+            <div class="bar-row"><span class="bar-label">Decisive fact removed</span><span class="bar-track"><span class="bar flat" style="width:99.0804%"></span></span><span class="bar-value">0.990804</span></div>
+          </div>
+          <p class="chart-note">30 matched synthetic packets; precommitted final-layer gap: +0.007617. This measures internal-state sensitivity, not answer accuracy or memory recovery.</p>
         </figure>
       </div>
     </section>
@@ -155,6 +163,12 @@
           <h3><a href="https://github.com/BlickandMorty/evidence-conflict-circuits">Evidence-Conflict Circuits ↗</a></h3>
           <p>A 256-case four-valued evidence task, 48-pair bidirectional residual patch, and an eight-feature sparse intervention that failed to reproduce the whole-state effect. A later frozen 32-packet science/security prompt test found that an internal evidence ledger did not improve Qwen3 1.7B over direct classification: both scored 15/32.</p>
           <p class="boundary">Boundary: a causal hidden-state result is not automatically a sparse circuit, and a plausible prompt explanation is not an improvement until it beats a frozen test.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>AI internals × memory</span><span>30 matched direct-state pairs</span></div>
+          <h3><a href="https://github.com/BlickandMorty/compression-control-reasoning-lab">Compression-Control Reasoning Lab ↗</a></h3>
+          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617).</p>
+          <p class="boundary">Boundary: synthetic state-sensitivity result, not answer accuracy, recovered memory, a reasoning-control intervention, or evidence of emotion/valence. A two-case behavioral pilot remains mixed and explicitly provisional.</p>
         </article>
         <article class="project">
           <div class="project-meta"><span>AI internals × science</span><span>36 frozen pairs</span></div>
