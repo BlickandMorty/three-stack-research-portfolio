@@ -98,6 +98,10 @@ These are analogies, not claims that a transformer is a literal human brain.
   unambiguous: direct answers fabricated on 30/30 lossy packets, while the
   frozen self-check abstained correctly on 30/30 lossy packets but answered
   0/30 full and 0/30 lossless answerable packets.
+  The preregistered SmolLM2-1.7B second-model replication then used the same
+  30 packets, final-layer statistic, and a checkpoint pinned by revision and
+  SHA-256. Its final-layer delta was positive on all 30 cases (+0.000486662),
+  directionally matching Qwen but at a much smaller magnitude.
 - **Brain analogy:** Compare a person's shared mental scratchpad after crossing
   out a footer detail versus the actual rule needed to solve a problem. The
   second change moves the scratchpad more, even if the person still answers
@@ -105,7 +109,9 @@ These are analogies, not claims that a transformer is a literal human brain.
 - **Limit:** The state-sensitivity and v2 hook result are not accuracy, memory
   recovery, answer improvement, a permanent parameter update, general causal
   control, valence, or consciousness. v1 failed its overall gate; v2 passes
-  only a narrow latent-geometry gate.
+  only a narrow latent-geometry gate. The SmolLM2 result is a direct
+  state-sensitivity replication, not a cross-model effect size or behavioral
+  improvement.
 - **Study:** [repo](https://github.com/BlickandMorty/compression-control-reasoning-lab)
 
 ### Evidence-Conflict Circuits

@@ -45,7 +45,7 @@ whether anything is subjectively felt.
 
 | Lane | Current status | Honest next milestone |
 | --- | --- | --- |
-| AI internals / mechanistic interpretability | Public experiments and nulls are documented. | Independent model and corpus replication of one already-frozen effect. |
+| AI internals / mechanistic interpretability | Public experiments and nulls are documented; the 30-packet final-layer direction now replicates on SmolLM2-1.7B, at a much smaller gap than Qwen3 0.6B. | Independent-corpus replication or a preregistered behavioral task family; do not search layers after the fact. |
 | AI × science | Public audit-loop and measurement studies are documented. | Pre-register one science task where an intervention is evaluated without an oracle being mistaken for learned capability. |
 | Defensive security | Safe policy, routing, and provenance evaluations are documented. | Build operational skills (Security+ / SOC labs) separately from research claims; keep research simulations clearly non-production. |
 | UAS / interoperability | Typed retrieval, metadata-loss, and answer-packet integrity results are complete for this pass. | Do **not** chase a new synthetic score. Use an independently authored corpus, frozen protocol, separate grader, and a publication plan. |
