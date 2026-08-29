@@ -27,6 +27,10 @@ The homepage highlights the core projects; the atlas keeps supporting tests,
 failed generalizations, and technical bounds visible without turning each into
 a separate headline claim.
 
+[RELEASE_AUDIT_v3_2.md](RELEASE_AUDIT_v3_2.md) records what is complete for the
+current release, what is deliberately pending, and the conditions required to
+resume research without reopening closed experiments.
+
 For a Vercel Hobby import:
 
 - repository: `BlickandMorty/three-stack-research-portfolio`
