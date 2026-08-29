@@ -69,6 +69,8 @@ In the [Unified Address Space Reasoning Lab](https://github.com/BlickandMorty/un
 
 That proves a limited retrieval-policy result: preserving the requested type prevents the deliberately created type mix-up. It does not prove that UAS makes a model generally smarter. A separate 24-case local-model follow-up tied at `24 / 24` in both conditions, and that null stays part of the record.
 
+The next UAS study is therefore not another demo. It is a public [independent-corpus preregistration](https://github.com/BlickandMorty/unified-address-space-reasoning-lab/blob/main/EXTERNAL_CORPUS_PREREGISTRATION.md): outside source receipts, a frozen retrieval-code hash, separate case-author and blind-grader roles, and no result until that contract is met.
+
 ## Answer packets: the “lab report receipt” experiment
 
 An answer packet is a structured receipt attached to an answer: it says what evidence was used, which version produced it, and how to replay the evaluation. The [Answer-Packet Integrity Lab](https://github.com/BlickandMorty/answer-packet-integrity-lab) accepted 90 valid frozen packets and rejected 540 one-rule tamper cases.
