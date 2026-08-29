@@ -41,7 +41,7 @@ whether anything is subjectively felt.
 | AI × science | Public audit-loop and measurement studies are documented. | Pre-register one science task where an intervention is evaluated without an oracle being mistaken for learned capability. |
 | Defensive security | Safe policy, routing, and provenance evaluations are documented. | Build operational skills (Security+ / SOC labs) separately from research claims; keep research simulations clearly non-production. |
 | UAS / interoperability | Typed retrieval, metadata-loss, and answer-packet integrity results are complete for this pass. | Do **not** chase a new synthetic score. Use an independently authored corpus, frozen protocol, separate grader, and a publication plan. |
-| AI wellbeing / valence | New foundation lane: reading and protocol design only. | Define a discriminating behavioral hypothesis before running an experiment. |
+| AI wellbeing / valence | Compression-Control Reasoning Lab protocol and deterministic fixture scaffold are public; no model result yet. | Run the single frozen Stage 1 baseline, inspect all raw outputs, then decide whether hidden-activation work is warranted. |
 
 ## Plain-language glossary
 
@@ -100,6 +100,21 @@ word choice?
 coercion, or putative suffering. Start with passive analysis and benign
 conditions. Do not claim consciousness, welfare, pleasure, pain, or moral
 patienthood from this work.
+
+## Current scaffold: compression-control reasoning
+
+[Compression-Control Reasoning Lab](https://github.com/BlickandMorty/compression-control-reasoning-lab)
+turns the broad idea into a staged study. It uses matched full,
+lossless-compressed, and lossy-compressed fictional evidence packets. The key
+test is not “can a model guess the missing fact?” It is whether a fixed control
+improves careful reasoning when the needed facts remain and produces the
+correct `INSUFFICIENT` response when a needed fact is gone.
+
+The first runnable tier compares a direct local-model answer to one frozen
+self-check instruction. That is deliberately **not** an internal-parameter
+intervention. It is the cheap behavioral baseline that any later activation
+steering must beat. The repository already verifies the generated fixture; no
+model score has been claimed or placed on the portfolio.
 
 ## Reading trail
 
