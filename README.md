@@ -18,6 +18,15 @@ The larger private Epistemos site contains application logic and local research
 features. It is the wrong artifact to use as a zero-cost public portfolio. This
 repository is smaller, auditable, and safe to host as static files.
 
+## Study map
+
+Start with [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for the complete project
+index, exact results, and limits. [PLAIN_LANGUAGE_LAB_GUIDE.md](PLAIN_LANGUAGE_LAB_GUIDE.md)
+explains the same work without assuming research or engineering background.
+The homepage highlights the core projects; the atlas keeps supporting tests,
+failed generalizations, and technical bounds visible without turning each into
+a separate headline claim.
+
 For a Vercel Hobby import:
 
 - repository: `BlickandMorty/three-stack-research-portfolio`
