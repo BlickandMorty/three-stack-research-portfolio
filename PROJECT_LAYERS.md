@@ -23,6 +23,8 @@ notes/files -> prose editor -> local index/retrieval -> link graph -> reliabilit
 
 [Epistemos](https://github.com/BlickandMorty/Epistemos) is the workspace direction. [Instant Recall](https://github.com/BlickandMorty/epistemos-instant-recall) is the separately inspectable local search companion: title/prefix scoring, BM25, deterministic trigram similarity, and weighted rank fusion. The default trigram channel is not a neural semantic model.
 
+Inside Instant Recall, a note is split into title, heading, and paragraph chunks with content/revision identities before ranking. Search-channel results are vault-bound and fused with explicit receipts; ambient recall removes the note already open. The contract tests also reject cross-vault publication and forged chunk identity, use a local lexical fallback when a semantic asset is unavailable, and redact note/query content from diagnostics. Those are reliability and privacy constraints around retrieval, not claims that search is perfect.
+
 ## Unified Address Space Reasoning Lab
 
 ```text
