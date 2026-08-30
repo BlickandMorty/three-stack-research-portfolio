@@ -25,6 +25,8 @@ notes/files -> prose editor -> local index/retrieval -> link graph -> reliabilit
 
 Inside Instant Recall, a note is split into title, heading, and paragraph chunks with content/revision identities before ranking. Search-channel results are vault-bound and fused with explicit receipts; ambient recall removes the note already open. The contract tests also reject cross-vault publication and forged chunk identity, use a local lexical fallback when a semantic asset is unavailable, and redact note/query content from diagnostics. Those are reliability and privacy constraints around retrieval, not claims that search is perfect.
 
+The prose-editor path is also its own stack: a SwiftUI editor container and TextKit coordinator; Markdown storage, projection, and command surfaces; disk-backed body loading with debounced persistence; wikilink/title/block interaction; a provenance store plus the bounded note-edit direction; and focused editor, Markdown, provenance, layout, and benchmark tests. Historic work logged content-process crashes, while automatic recovery was explicitly left as a deferred gap. That distinction is intentional: an editor can have substantial tested machinery without being described as complete.
+
 ## Unified Address Space Reasoning Lab
 
 ```text
