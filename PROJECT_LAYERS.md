@@ -18,6 +18,7 @@ notes/files -> prose editor -> local index/retrieval -> link graph -> reliabilit
 - **Controlled edits:** a historically tested note-edit core and a structured vault patch direction.
 - **Search:** index wiring, a focused regression test, and a recorded runtime bug finding.
 - **Graph:** note links can become graph data through separate builder/store/engine surfaces.
+- **Vault context and provenance:** historical vault work exposed selected note context, followed outbound links, used a bounded atomic note-edit path, and recorded edit mutation envelopes. This is an evidence-carrying direction, not unrestricted agent access to notes.
 - **Reliability:** atomic-write fixes and focused tests address interruption/corruption risk; they do not guarantee every path is finished.
 
 [Epistemos](https://github.com/BlickandMorty/Epistemos) is the workspace direction. [Instant Recall](https://github.com/BlickandMorty/epistemos-instant-recall) is the separately inspectable local search companion: title/prefix scoring, BM25, deterministic trigram similarity, and weighted rank fusion. The default trigram channel is not a neural semantic model.
