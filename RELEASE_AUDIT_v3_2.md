@@ -13,7 +13,7 @@ here means ready to study and critique, not permanently finished research.
 | Science work | Scientific audit-loop replication and dose-response measurement-risk study with disclosed limits. | Complete for this release |
 | Defensive-security work | Safe policy/routing evaluations plus authorized localhost packet and service-validation reports. | Complete for this release |
 | UAS and answer-packet work | Synthetic retrieval control, local metadata ablation, tied model follow-up, packet integrity validator, and external-corpus preregistration. | Complete narrow results; generalization pending |
-| Public explanation | Portfolio, research atlas, plain-language guide, foundation frontier, master study guide, and project READMEs. | Complete |
+| Public explanation | Portfolio, research atlas, plain-language guide, foundation frontier, master study guide, project READMEs, and the [project layer map](PROJECT_LAYERS.md). | Complete |
 | Visual and static-site checks | Portfolio charts and research map are published; `verify_site.py` passes. | Complete |
 
 ## Completed SmolLM2 gate
