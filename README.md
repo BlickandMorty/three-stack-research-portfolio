@@ -23,7 +23,8 @@ repository is smaller, auditable, and safe to host as static files.
 Start with [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for the complete project
 index, exact results, and limits. [PLAIN_LANGUAGE_LAB_GUIDE.md](PLAIN_LANGUAGE_LAB_GUIDE.md)
 explains the same work without assuming research or engineering background.
-The homepage highlights the core projects; the atlas keeps supporting tests,
+Use [PROJECT_LAYERS.md](PROJECT_LAYERS.md) to see the input, mechanism, check,
+saved result, and boundary for the main projects. The homepage highlights the core projects; the atlas keeps supporting tests,
 failed generalizations, and technical bounds visible without turning each into
 a separate headline claim.
 
