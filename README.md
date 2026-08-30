@@ -27,6 +27,8 @@ Use [PROJECT_LAYERS.md](PROJECT_LAYERS.md) to see the input, mechanism, check,
 saved result, and boundary for the main projects. The homepage highlights the core projects; the atlas keeps supporting tests,
 failed generalizations, and technical bounds visible without turning each into
 a separate headline claim.
+[CONTINUATION_QUEUE.md](CONTINUATION_QUEUE.md) says what can legitimately be
+resumed next and the evidence gate required before a new experiment begins.
 
 [RELEASE_AUDIT_v3_2.md](RELEASE_AUDIT_v3_2.md) records what is complete for the
 current release, what is deliberately pending, and the conditions required to
