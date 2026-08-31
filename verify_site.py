@@ -36,14 +36,13 @@ for href in parser.hrefs:
         assert (root / href.lstrip("/")).exists(), f"missing local asset: {href}"
 
 required_repos = {
+    "Epistemos",
+    "LivingBrain",
+    "epistemos-instant-recall",
     "scientific-reasoning-audit-loops",
     "unified-address-space-reasoning-lab",
-    "epistemos-prompt-lab",
-    "epistemos-instant-recall",
-    "LivingBrain",
     "DataSight-AI",
     "security-operations-lab",
-    "Epistemos",
 }
 assert all(name in html for name in required_repos)
 
