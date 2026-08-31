@@ -1,4 +1,6 @@
-# Research release audit - v3.2
+# Historical research release audit - v3.2
+
+> **Public-boundary note (2026-08-31):** This records an earlier internal release view. Several named experiments are now private or retired and are not current public portfolio projects. Use [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for the current public inventory.
 
 This is the stopping-point audit for the current three-stack release. A project
 is counted as complete only when it has a stated question, frozen or

@@ -1,4 +1,6 @@
-# Research Continuation Queue
+# Historical Research Continuation Queue
+
+> **Public-boundary note (2026-08-31):** This queue is retained as private-study context. It is not a public roadmap or evidence source. Any resumed work needs separate evidence review before publication.
 
 Use one of the phrases below when you want to resume a line of work. This queue prevents a project from turning into “run more things until a number looks better.”
 

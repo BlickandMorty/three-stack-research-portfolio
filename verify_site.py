@@ -37,18 +37,25 @@ for href in parser.hrefs:
 
 required_repos = {
     "scientific-reasoning-audit-loops",
-    "evidence-conflict-circuits",
-    "scientific-evidence-state-transport",
-    "representation-causality-gap-audit",
-    "component-edit-bound-audit",
-    "dose-response-audit-lab",
-    "proof-carrying-policy-evals",
-    "lattice-state-consistency-lab",
-    "sheaf-connectome-sanity-lab",
-    "interrupt-router-calibration-lab",
-    "eml-star-epistemos",
+    "unified-address-space-reasoning-lab",
+    "epistemos-prompt-lab",
+    "epistemos-instant-recall",
+    "LivingBrain",
+    "DataSight-AI",
+    "security-operations-lab",
+    "Epistemos",
 }
 assert all(name in html for name in required_repos)
+
+retired_or_private_repos = {
+    "answer-packet-integrity-lab", "evidence-conflict-circuits",
+    "compression-control-reasoning-lab", "scientific-evidence-state-transport",
+    "representation-causality-gap-audit", "component-edit-bound-audit",
+    "dose-response-audit-lab", "proof-carrying-policy-evals",
+    "lattice-state-consistency-lab", "sheaf-connectome-sanity-lab",
+    "interrupt-router-calibration-lab", "eml-star-epistemos",
+}
+assert not any(name in html for name in retired_or_private_repos)
 
 config = json.loads((root / "vercel.json").read_text(encoding="utf-8"))
 headers = {item["key"]: item["value"] for rule in config["headers"] for item in rule["headers"]}

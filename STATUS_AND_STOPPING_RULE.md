@@ -1,4 +1,6 @@
-# Research Status and Stopping Rule
+# Historical Research Status and Stopping Rule
+
+> **Public-boundary note (2026-08-31):** This is historical internal study material. It is not the current public inventory. Use [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for public projects; preserve this file only as private-study context.
 
 ## What is finished enough to study now
 

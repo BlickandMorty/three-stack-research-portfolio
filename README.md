@@ -1,49 +1,20 @@
 # Three-Stack Research Portfolio
 
-This is my lightweight public research portfolio for the three parts of my work:
-AI internals, science, and defensive security. It is deliberately plain static
-HTML and CSS. There is no database, analytics script, paid API, serverless
-function, or build step.
+This is Jordan Conley's small public portfolio for AI evaluation, data quality, and defensive security. It is deliberately static HTML and CSS: no database, analytics, paid API, environment variable, or build step.
 
-## Design
+## Public boundary
 
-The site uses a deliberately minimal off-white pixel-art system and bundles the
-SIL Open Font License 1.1 `Press Start 2P` font in `assets/fonts/`. The font
-license is preserved alongside the asset. Hosting remains a free static Vercel
-deployment with no environment variables.
+The homepage lists only projects that are currently public and inspectable. Private/local work, including SYNTH and the Windows Epistemos scaffold, is not represented as a finished public project. Upstream forks are retained for provenance but are not portfolio projects.
 
-## Why this is the Vercel project
+## Reading order
 
-The larger private Epistemos site contains application logic and local research
-features. It is the wrong artifact to use as a zero-cost public portfolio. This
-repository is smaller, auditable, and safe to host as static files.
+1. [PLAIN_LANGUAGE_LAB_GUIDE.md](PLAIN_LANGUAGE_LAB_GUIDE.md) for a no-jargon explanation.
+2. [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for the public project map, evidence, and limits.
+3. [PROJECT_LAYERS.md](PROJECT_LAYERS.md) for how input, comparison, measure, and boundary fit together.
 
-## Study map
+## Ownership and assistance
 
-Start with [RESEARCH_ATLAS.md](RESEARCH_ATLAS.md) for the complete project
-index, exact results, and limits. [PLAIN_LANGUAGE_LAB_GUIDE.md](PLAIN_LANGUAGE_LAB_GUIDE.md)
-explains the same work without assuming research or engineering background.
-Use [PROJECT_LAYERS.md](PROJECT_LAYERS.md) to see the input, mechanism, check,
-saved result, and boundary for the main projects. The homepage highlights the core projects; the atlas keeps supporting tests,
-failed generalizations, and technical bounds visible without turning each into
-a separate headline claim.
-[CONTINUATION_QUEUE.md](CONTINUATION_QUEUE.md) says what can legitimately be
-resumed next and the evidence gate required before a new experiment begins.
-
-[RELEASE_AUDIT_v3_2.md](RELEASE_AUDIT_v3_2.md) records what is complete for the
-current release, what is deliberately pending, and the conditions required to
-resume research without reopening closed experiments.
-
-For a Vercel Hobby import:
-
-- repository: `BlickandMorty/three-stack-research-portfolio`
-- framework preset: `Other`
-- build command: leave blank
-- output directory: `.`
-- environment variables: none
-
-Do not accept a Pro trial or enter payment details for this project. The site
-does not need them.
+Jordan defines the research questions, scope, evidence standard, review decisions, and public boundaries. AI assisted some implementation and iteration. Each project README is the source of truth for its specific methods, result files, and limitations.
 
 ## Local check
 
@@ -51,7 +22,14 @@ does not need them.
 python -m http.server 4173
 ```
 
-Then open `http://127.0.0.1:4173/`.
+Open `http://127.0.0.1:4173/`.
 
-The public page links to the source artifacts rather than embedding private
-notes, contact details, résumé data, API keys, or research credentials.
+## Vercel Hobby
+
+- Repository: `BlickandMorty/three-stack-research-portfolio`
+- Framework preset: `Other`
+- Build command: leave blank
+- Output directory: `.`
+- Environment variables: none
+
+This is intended to remain a free static deployment.
