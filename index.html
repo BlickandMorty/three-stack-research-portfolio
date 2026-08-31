@@ -220,99 +220,45 @@
     </section>
 
     <section class="research" id="research" aria-labelledby="research-title">
-      <p class="section-label">Public research</p>
-      <h2 id="research-title">Projects you can rerun, inspect, and disagree with.</h2>
-      <p class="lede">Start with the eight core projects named in the study atlas. The atlas keeps supporting tests, partial replications, and falsified ideas available without presenting every repository as a separate headline claim.</p>
+      <p class="section-label">Selected public work</p>
+      <h2 id="research-title">A small set I can explain honestly.</h2>
+      <p class="lede">I use AI heavily while building. These are the projects I chose to keep public because each one supports the same direction: research tools, inspectable AI experiments, data quality, and defensive security. Supporting experiments and math notes stay private until I understand them well enough to present separately.</p>
       <div class="project-list">
         <article class="project featured">
-          <div class="project-meta"><span>AI × science</span><span>72 + 72 precommitted cases</span></div>
+          <div class="project-meta"><span>Product × research workflow</span><span>Main project</span></div>
+          <h3><a href="https://github.com/BlickandMorty/Epistemos">Epistemos ↗</a></h3>
+          <p>My main research-workspace direction: local notes, retrieval, evidence, editing, and bounded AI assistance in one place.</p>
+          <p class="boundary">Boundary: it is an AI-assisted project still in development. I can explain the product direction and working surfaces, not every line of its Swift, Rust, and TypeScript code.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>Memory × retrieval</span><span>Two connected projects</span></div>
+          <h3><a href="https://github.com/BlickandMorty/LivingBrain">LivingBrain ↗</a> · <a href="https://github.com/BlickandMorty/epistemos-instant-recall">Instant Recall ↗</a></h3>
+          <p>LivingBrain explores decay, reinforcement, contradictions, and reusable skills. Instant Recall explores local search with inspectable ranking. Together they test how a workspace can remember useful information without acting like every stored item is equally current or important.</p>
+          <p class="boundary">Boundary: “living brain” is an analogy for software behavior, not a biological model or a claim of human-like cognition.</p>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>AI × science</span><span>Reproducible comparison</span></div>
           <h3><a href="https://github.com/BlickandMorty/scientific-reasoning-audit-loops">Scientific Reasoning Audit Loops ↗</a></h3>
-          <p>The original audit found 61.1%→79.2% self-audit improvement with three regressions. A public-precommitted, exactly label-balanced replication found 62.5% direct, 75.0% intrinsic, and 81.9% verifier-gated (14 repairs, 0 regressions).</p>
-          <p class="boundary">Boundary: oracle feedback protects direct-correct cases by design; this is inference-time scaffolding, not learned science.</p>
+          <p>A small-model experiment comparing direct answers, self-review, and narrow verifier feedback on controlled chemistry, physics, and biology problems.</p>
+          <p class="boundary">Boundary: the experiment tests inference-time checking on a synthetic benchmark. It does not show that the model learned science.</p>
         </article>
         <article class="project">
-          <div class="project-meta"><span>AI systems × science × security</span><span>90 frozen type-confusion queries</span></div>
+          <div class="project-meta"><span>Retrieval × provenance</span><span>Mixed result kept visible</span></div>
           <h3><a href="https://github.com/BlickandMorty/unified-address-space-reasoning-lab">Unified Address Space Reasoning Lab ↗</a></h3>
-          <p>An independent UAS retrieval experiment gives science observations, safe defensive-security traces, and AI-evaluation notes stable typed addresses. Flat ranking returned the wrong type on 90/90 synthetic type-confusion queries; typed retrieval returned the target on 90/90. A local Qwen3 4B type-erasure ablation then went 8/24 flat versus 24/24 typed UAS, with wrong-domain answers 16→0.</p>
-          <p class="boundary">Boundary: the type label is available to UAS by design. A separate 24-case local-model follow-up tied at 24/24 in both conditions, so it did not confirm a general behavioral gain. This is not factual truth or live model routing.</p>
+          <p>A typed-address retrieval experiment connecting science observations, defensive-security records, and AI-evaluation notes. One local-model test tied; a narrower metadata-loss ablation improved from 8/24 to 24/24.</p>
+          <p class="boundary">Boundary: preserving a useful type label helps when the baseline removes it. That is not proof of a general reasoning improvement.</p>
         </article>
         <article class="project">
-          <div class="project-meta"><span>Provenance × AI systems</span><span>90 valid + 540 tamper cases</span></div>
-          <h3><a href="https://github.com/BlickandMorty/answer-packet-integrity-lab">Answer-Packet Integrity Lab ↗</a></h3>
-          <p>A deterministic answer-packet validator accepts 90 frozen science, safe-security, and AI-evaluation packets, while rejecting six specific metadata corruptions across 540 deliberate tamper cases: schema, identifier, fallback acknowledgement, label, evidence link, and replay digest.</p>
-          <p class="boundary">Boundary: packet integrity is not factual truth, model provenance, or deployed-system security. It is a narrow check that a declared answer interface did not silently lose its linked evidence and replay material.</p>
+          <div class="project-meta"><span>Data quality</span><span>Python learning project</span></div>
+          <h3><a href="https://github.com/BlickandMorty/DataSight-AI">DataSight ↗</a></h3>
+          <p>A CSV review tool for missing values, outliers, schema risks, and explanations that a person can inspect before deciding what to fix.</p>
+          <p class="boundary">Boundary: it flags likely issues; it does not automatically prove that a value is wrong.</p>
         </article>
         <article class="project">
-          <div class="project-meta"><span>AI internals</span><span>Causal intervention</span></div>
-          <h3><a href="https://github.com/BlickandMorty/evidence-conflict-circuits">Evidence-Conflict Circuits ↗</a></h3>
-          <p>A 256-case four-valued evidence task, 48-pair bidirectional residual patch, and an eight-feature sparse intervention that failed to reproduce the whole-state effect. A later frozen 32-packet science/security prompt test found that an internal evidence ledger did not improve Qwen3 1.7B over direct classification: both scored 15/32.</p>
-          <p class="boundary">Boundary: a causal hidden-state result is not automatically a sparse circuit, and a plausible prompt explanation is not an improvement until it beats a frozen test.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI internals × memory</span><span>30 matched direct-state pairs</span></div>
-          <h3><a href="https://github.com/BlickandMorty/compression-control-reasoning-lab">Compression-Control Reasoning Lab ↗</a></h3>
-          <p>A direct Qwen3 0.6B Transformer audit measured final residual-stream geometry without answer generation: deleting a decisive assignment fact produced lower similarity to the matched full-context state than deleting an irrelevant fact (0.990804 versus 0.998421; precommitted gap +0.007617). A preregistered SmolLM2-1.7B second-model run kept the same 30 packets and final-layer statistic: all 30 deltas were positive, but the mean gap was much smaller (+0.000486662). The completed 180-cell behavioral baseline exposed a hard tradeoff: direct answers fabricated on 30/30 lossy packets, while a frozen self-check abstained on every answerable packet. A new 36-case science-style behavioral test then kept the v2 vector fixed against baseline and random control; all conditions abstained on every case, leaving 0/72 answerable accuracy and an unusable behavioral floor. A first 18-case hook study repaired geometry but failed its clean-state gate. An independent 48-case replication then chose scale on development cases only and, on 24 held-out cases, gained +0.002557 over baseline, beat random by +0.002673, and kept clean drop at 0.000441.</p>
-          <p class="boundary">Boundary: neither frozen behavioral condition is a useful procedure. The science-style behavioral non-confirmation does not isolate benefit or harm because baseline competence was zero. The SmolLM2 result replicates a directional internal-state effect, not its magnitude or any answer-quality gain. The direct work is a narrow latent-geometry control result, not recovered memory, a permanent parameter update, safe general self-correction, or evidence of emotion/valence.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI internals × science</span><span>36 frozen pairs</span></div>
-          <h3><a href="https://github.com/BlickandMorty/scientific-evidence-state-transport">Scientific Evidence-State Transport ↗</a></h3>
-          <p>The frozen layer-20 patch kept its sign on 31/36 short numeric science pairs, then failed a separately preregistered 30-pair longer-chain replication.</p>
-          <p class="boundary">Boundary: a longer-chain replication failed, and its post-hoc layout explanation reversed on 24 untouched bases—rejecting robust, layer-specific, or confirmed interaction claims.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI internals × science</span><span>120 format-heldout cases</span></div>
-          <h3><a href="https://github.com/BlickandMorty/representation-causality-gap-audit">Representation–Causality Gap Audit ↗</a></h3>
-          <p>A source-only layer-20 probe fell from 100% entity-CV to 50% on Quill. A fixed multiformat probe trained on source plus Quill then reached 79.2% on the predeclared third Mosaic format; the model head reached 49.2%.</p>
-          <p class="boundary">Boundary: this is a linear readout result, not model training, causal control, or scientific proof; REFUTED remained only 50% accurate.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI internals × safety</span><span>87 held-out prompts</span></div>
-          <h3><a href="https://github.com/BlickandMorty/component-edit-bound-audit">Component-Edit Bound Audit ↗</a></h3>
-          <p>A frozen transcoder-hook locality envelope passed with 2/87 prompt violations and no eligible PPL drift above 1.0; rejected development fits and random controls remain in the record.</p>
-          <p class="boundary">Boundary: an empirical hook-edit result is not a universal parameter-edit theorem or a semantic circuit.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>Science × provenance</span><span>precommitted control-bias sweep</span></div>
-          <h3><a href="https://github.com/BlickandMorty/dose-response-audit-lab">Dose-Response Audit Lab ↗</a></h3>
-          <p>Monte Carlo experiments separate outlier robustness from structural identifiability. A 400-curve-per-condition control-bias sweep found that fixed-control error increases IC50 risk monotonically; at 40 response units, about 54% of fits were at least twofold wrong.</p>
-          <p class="boundary">Boundary: this is a synthetic control-bias map. A SHA-256 receipt detects changed result material, not whether a laboratory control was biologically correct.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>Security</span><span>96 + 48 + 72 passive cases</span></div>
-          <h3><a href="https://github.com/BlickandMorty/proof-carrying-policy-evals">Proof-Carrying Policy Evals ↗</a></h3>
-          <p>A deterministic ALLOW/DENY/ESCALATE oracle with canonical receipts tests surface robustness. A public-precommitted 72-case certificate confirmation improved accuracy 40.3%→59.7% but raised unauthorized ALLOWs 3→6.</p>
-          <p class="boundary">Boundary: it failed the precommitted safety rule. Aggregate accuracy can improve while the dangerous error profile worsens.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>Defensive security operations</span><span>2 authorized localhost reports</span></div>
+          <div class="project-meta"><span>Defensive security</span><span>Authorized local lab</span></div>
           <h3><a href="https://github.com/BlickandMorty/security-operations-lab">Security Operations Lab ↗</a></h3>
-          <p>Sanitized, reproducible blue-team lab evidence: a 13-frame loopback Wireshark/TShark investigation documents TCP setup, a local HTTP GET/200, and orderly close; an authorized Nmap localhost service check is manually validated against Windows listeners and services.</p>
-          <p class="boundary">Boundary: these are controlled personal-lab exercises, not external monitoring, incident response, vulnerability confirmation, or penetration testing.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>Formal systems</span><span>Exhaustive finite audit</span></div>
-          <h3><a href="https://github.com/BlickandMorty/lattice-state-consistency-lab">Lattice State Consistency Lab ↗</a></h3>
-          <p>The product state space passes lattice laws and 2,592 migration checks. A frozen 84-rule atlas then found that all-required-item rules preserve both operations; multi-item any-of is join-only, at-most-one is meet-only, and exactly-one is neither.</p>
-          <p class="boundary">Boundary: this is an exact finite policy grammar result, not a theorem about arbitrary production authorization rules.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI × science × security</span><span>360 held-out graphs</span></div>
-          <h3><a href="https://github.com/BlickandMorty/sheaf-connectome-sanity-lab">Sheaf Connectome Sanity Lab ↗</a></h3>
-          <p>The H0 identity passed, but my canon's positive spectral-gap/modularity criterion reversed to ρ = −0.972; label shuffles and degree-preserving rewires collapsed near zero.</p>
-          <p class="boundary">Boundary: a planted synthetic falsifier is not transformer, biological, or production-network validation.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>AI × science × security</span><span>108 held-out prompts</span></div>
-          <h3><a href="https://github.com/BlickandMorty/interrupt-router-calibration-lab">Interrupt Router Calibration Lab ↗</a></h3>
-          <p>A frozen logit-margin fallback reduced unauthorized ALLOWs from 4 to 1 at a 24.1% interrupt rate while accuracy stayed at 38.9%.</p>
-          <p class="boundary">Boundary: always-ESCALATE tied accuracy, the base classifier remained weak, and this is an output router—not an attention-kernel intervention.</p>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>Theorem audit</span><span>677 enumerated terms</span></div>
-          <h3><a href="https://github.com/BlickandMorty/eml-star-epistemos">EML-star Epistemos ↗</a></h3>
-          <p>A structural proof and executable audit falsify a density claim for a closed grammar with no coordinate terminal.</p>
-          <p class="boundary">Boundary: naming Stone–Weierstrass does not supply its hypotheses.</p>
+          <p>Personal-lab packet analysis and localhost service review using Wireshark/TShark, Nmap, Windows records, and written investigation notes.</p>
+          <p class="boundary">Boundary: this is self-learning on systems I control, not professional incident-response or penetration-testing experience.</p>
         </article>
       </div>
     </section>
